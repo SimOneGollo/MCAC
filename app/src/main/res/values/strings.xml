@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MCAC</string>
+    <string name="front">FRONT</string>
+    <string name="front_left">FRONT-LEFT</string>
+    <string name="front_right">FRONT-RIGHT</string>
+    <string name="bottom">BOTTOM</string>
+    <string name="bottom_left">BOTTOM-LEFT</string>
+    <string name="bottom_right">BOTTOM-RIGHT</string>
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+    <string name="center">CENTER</string>
 </resources>
