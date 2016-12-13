@@ -79,11 +79,11 @@
         android:layout_toEndOf="@+id/txtPower" />
 
     <ToggleButton
-        android:text="ToggleButton"
+        android:text="Bluetooth connection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:id="@+id/toggleButton"
+        android:id="@+id/connection"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/joystick" />
 
