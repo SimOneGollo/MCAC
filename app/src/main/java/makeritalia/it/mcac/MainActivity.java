@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     OutputStream outStream;
 
-    UUID uuid = UUID.fromString("ad916152-4dfa-4500-a8d5-9be094b918c6");
+    UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
 
     @Override
@@ -94,9 +95,9 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 /*Funzione per definire start end stop*/
                 if (isChecked){
-                    /*invio la stringa start*/
+                    outMessage("start");
                 }else{
-                    /*invio la stringa stop*/
+                    outMessage("stop");
                 }
             }
         });
@@ -118,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "ON", Toast.LENGTH_SHORT).show();
                             } catch (IOException e) {
                                 tgb.setChecked(false);
+                                Log.i("Bletooth",e.toString());
                                 try {
                                     //try to close bluetooth connection
                                     mSocket.close();
